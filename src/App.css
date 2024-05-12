@@ -1,0 +1,52 @@
+
+.app {
+    background-color: rgb(255 244 253);
+}
+
+::selection{
+    background-color: rgb(6 199 253);
+    color: rgb(255 123 0);
+}
+
+.app__header {
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0.1em 0.1em 0.1em rgba(0 0 0 / 0.295);
+}
+
+.app__title {
+    margin-left: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    font-weight: 900;
+    text-shadow: 0.01em 0.01em 0.2em rgba(0 0 0 / 0.629);
+    text-transform: uppercase;
+    text-decoration: underline rgb(209 2 112);
+}
+
+.app__btn {
+    margin: 1em;    
+    font-size: 1rem;
+    padding: 0.2rem 2rem;
+    background-color: rgb(142 2 88);
+    color: rgb(240 255 255);
+    border: none;
+    border-radius: 0.8rem;
+    &:hover:active {
+        background-color: rgb(91 3 40);
+        color: rgb(255 255 255);
+        box-shadow: 0.01rem 0.01rem 1rem rgb(56 3 10);
+        transform: scale(0.9);
+    }
+}
+
+
+.use-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
+   justify-content: center;
+   gap: 1em;
+   padding: 1em;
+}
+
